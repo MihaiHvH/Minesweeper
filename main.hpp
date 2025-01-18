@@ -2,6 +2,7 @@
 
 #ifdef _WIN32
 	#define IL_USE_PRAGMA_LIBS
+	#pragma comment( linker, "/subsystem:\"windows\" /entry:\"mainCRTStartup\"" )
 #endif
 
 #include <utility>

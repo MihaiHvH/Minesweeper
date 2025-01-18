@@ -1,5 +1,4 @@
 #include "main.hpp"
-#include "include/GL/freeglut_std.h"
 
 pInterface interface;
 
@@ -17,7 +16,7 @@ void Render() {
 
 void Resize(GLint newWidth, GLint newHeight) {
     if (newWidth >= 8 && newHeight >= 8) {
-        /*for (auto &i : interface.pieces) {
+        for (auto &i : interface.pieces) {
             i.pos.first /= interface.gameInfo.pieceSize.first;
             i.pos.second /= interface.gameInfo.pieceSize.second;
         }
@@ -29,7 +28,7 @@ void Resize(GLint newWidth, GLint newHeight) {
         for (auto &i : interface.pieces) {
             i.pos.first *= interface.gameInfo.pieceSize.first;
             i.pos.second *= interface.gameInfo.pieceSize.second;
-        }*/
+        }
 
         glViewport( 0, 0, newWidth, newHeight );
         glMatrixMode( GL_PROJECTION );

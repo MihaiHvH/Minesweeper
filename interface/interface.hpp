@@ -22,13 +22,13 @@ class pInterface {
     std::vector<pPiece> pieces;
 
     void calcValuesAndPieces();
-    void spawnMines(int mines, std::pair<int, int> noPos);
-    pPiece &getPieceRel(std::pair<int, int> relPos);
-    pPiece &getPiece(std::pair<int, int> pos);
+    void spawnMines(int mines, std::pair<double, double> noPos);
+    pPiece &getPieceRel(std::pair<double, double> relPos);
+    pPiece &getPiece(std::pair<double, double> pos);
     bool shouldSpawnMine();
-    void spawnPiece(std::pair<int, int> pos, std::string value);
+    void spawnPiece(std::pair<double, double> pos, std::string value);
 
-    bool isFlagPlaced(std::pair<int, int> pos);
+    bool isFlagPlaced(std::pair<double, double> pos);
 
     void handleWin();
     void handleFlagPlacementClick();

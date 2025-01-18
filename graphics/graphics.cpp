@@ -50,15 +50,15 @@ void pGraphics::drawRectPoints(std::pair<int, int> point1, std::pair<int, int> p
     glEnd();
 }
 
-void pGraphics::drawRect(std::pair<int, int> pos, std::pair<int, int> size, pColor color) {
+void pGraphics::drawRect(std::pair<double, double> pos, std::pair<double, double> size, pColor color) {
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     glColor4f(color.r / 255.f, color.g / 255.f, color.b / 255.f, color.a / 255.f);
     glBegin(GL_POLYGON);
-    glVertex2i(pos.first, pos.second); //corner down
-    glVertex2i(pos.first + size.first, pos.second); //right down corner
-    glVertex2i(pos.first + size.first, pos.second + size.second); //right up corner
-    glVertex2i(pos.first, pos.second + size.second); //corner up
+    glVertex2f(pos.first, pos.second); //corner down
+    glVertex2f(pos.first + size.first, pos.second); //right down corner
+    glVertex2f(pos.first + size.first, pos.second + size.second); //right up corner
+    glVertex2f(pos.first, pos.second + size.second); //corner up
     glEnd();
 }
 

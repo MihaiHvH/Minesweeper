@@ -25,17 +25,19 @@ struct pGameInfo {
     int flags = 0;
     bool firstClick = false;
     bool picatLemnu = false;
+    bool pusLaLocLemnu = false;
 
-    std::pair<int, int> pieceSize = { 40, 40 };
+    std::pair<double, double> pieceSize = { 40, 40 };
 
     pColor digitCol[8];
+    pColor goldFlag;
     pColor downRightColor;
     pColor pieceColor;
     pColor upLeftColor;
 };
 
 struct pPiece {
-    std::pair<int, int> pos;
+    std::pair<double, double> pos;
     std::string value;
     bool show = false;
     bool flag = false;
