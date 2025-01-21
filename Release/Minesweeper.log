@@ -1,53 +1,6 @@
-﻿  buton.cpp
-  checkBox.cpp
-  graphics.cpp
-D:\Minesweeper\graphics\graphics.cpp(58,30): warning C4244: 'argument': conversion from '_Ty2' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty2=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(58,19): warning C4244: 'argument': conversion from '_Ty1' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty1=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(59,43): warning C4244: 'argument': conversion from '_Ty2' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty2=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(59,26): warning C4244: 'argument': conversion from '_Ty1' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty1=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(60,51): warning C4244: 'argument': conversion from '_Ty2' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty2=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(60,26): warning C4244: 'argument': conversion from '_Ty1' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty1=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(61,38): warning C4244: 'argument': conversion from '_Ty2' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty2=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(61,19): warning C4244: 'argument': conversion from '_Ty1' to 'GLfloat', possible loss of data
-          with
-          [
-              _Ty1=double
-          ]
-D:\Minesweeper\graphics\graphics.cpp(98,23): warning C4018: '<': signed/unsigned mismatch
-  image.cpp
-  slider.cpp
-  textBox.cpp
-  interface.cpp
+﻿  interface.cpp
 D:\Minesweeper\interface\interface.cpp(28,31): warning C4018: '<': signed/unsigned mismatch
-D:\Minesweeper\interface\interface.cpp(177,93): warning C4244: 'argument': conversion from '_Ty1' to '_Ty', possible loss of data
+D:\Minesweeper\interface\interface.cpp(164,93): warning C4244: 'argument': conversion from '_Ty1' to '_Ty', possible loss of data
           with
           [
               _Ty1=double
@@ -56,7 +9,7 @@ D:\Minesweeper\interface\interface.cpp(177,93): warning C4244: 'argument': conve
           [
               _Ty=int
           ]
-D:\Minesweeper\interface\interface.cpp(178,95): warning C4244: 'argument': conversion from '_Ty2' to '_Ty', possible loss of data
+D:\Minesweeper\interface\interface.cpp(165,95): warning C4244: 'argument': conversion from '_Ty2' to '_Ty', possible loss of data
           with
           [
               _Ty2=double
@@ -139,19 +92,9 @@ C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.36.3
           [
               _Ty2=int
           ]
-  main.cpp
-D:\Minesweeper\main.cpp(49,20): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type '_Ty1'
-          with
-          [
-              _Ty1=double
-          ]
-D:\Minesweeper\main.cpp(49,20): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 3 has type '_Ty2'
-          with
-          [
-              _Ty2=double
-          ]
   Generating code
-  Previous IPDB and IOBJ mismatch, fall back to full compilation.
-  All 424 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 422 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Minesweeper.vcxproj -> D:\Minesweeper\Release\Minesweeper.exe

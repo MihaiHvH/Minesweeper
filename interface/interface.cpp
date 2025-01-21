@@ -128,19 +128,6 @@ void pInterface::drawPiece(pPiece piece) {
             { piece.pos.first + (7 * gameInfo.pieceSize.first) / 8, piece.pos.second + (7 * gameInfo.pieceSize.second) / 8 },
             { piece.pos.first + (7 * gameInfo.pieceSize.first) / 8, piece.pos.second + gameInfo.pieceSize.second },
             gameInfo.downRightColor);
-        /*
-        //for debuging
-        graphics.drawRect({ piece.pos.first + gameInfo.pieceSize.first / 8, piece.pos.second + gameInfo.pieceSize.second / 8 }, { (3 * gameInfo.pieceSize.first) / 4, (3 * gameInfo.pieceSize.second) / 4 }, gameInfo.pieceColor);
-        //if (piece.value == "MINE") 
-            //if (piece.show)
-             if (piece.value != "NULL")
-                graphics.drawText(
-                    { piece.pos.first + 5, piece.pos.second + gameInfo.pieceSize.second / 2 },
-                    GLUT_BITMAP_HELVETICA_10,
-                    piece.value.append(" " + std::to_string(piece.show)).c_str(),
-                    piece.show ? graphics.red : graphics.black);
-        //end
-        */
     }
     else if (piece.value != "NULL_D" && std::isdigit(piece.value.at(0))) {
         int nr = piece.value.at(0) - '0';
@@ -300,14 +287,7 @@ void pInterface::handleFlagPlacementClick() {
 }
 
 bool pInterface::isFlagPlaced(std::pair<double, double> pos) {
-    pos = {
-        (pos.first / gameInfo.pieceSize.first) * gameInfo.pieceSize.first,
-        (pos.second / gameInfo.pieceSize.second) * gameInfo.pieceSize.second
-    };
-    for (auto i : pieces)
-        if (i.flag && i.pos == pos)
-            return true;
-    return false;
+    return getPieceRel(pos).flag;
 }
 
 void pInterface::handleClick(bool rClick) {

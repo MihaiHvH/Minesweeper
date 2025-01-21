@@ -44,10 +44,7 @@ void ProcessSpecialInput(int key, int x, int y) {
 }
 
 void ProcessInput(unsigned char key, int x, int y) {
-    if (key == 'F') {
-        for (int i = interface.pieces.size() - 1; i >= 0; --i)
-            printf("%s, %d, %d\n", interface.pieces.at(i).value.c_str(), interface.pieces.at(i).pos.first, interface.pieces.at(i).pos.second);
-    }
+
 }
 
 void HandleMouseKeys(int button, int state, int x, int y) {
